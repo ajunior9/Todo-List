@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        /* Basic styles for the project */
+        
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+        
+        button {
+            background-color: blanchedalmond;
+            width: 150px;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <input type="text" id="new-todo" placeholder="Add a new to-do">
+        <button id="add-todo">Add</button>
+        <ul id="todo-list"></ul>
+        <div>
+            <button id="show-all">All Todo List</button>
+            <button id="show-active">All Active</button>
+            <button id="show-completed">All Completed</button>
+        </div>
+    </div>
+    <script src="todolist.js"></script>
+</body>
+
+</html>
